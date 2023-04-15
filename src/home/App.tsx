@@ -4,7 +4,9 @@ import { useState } from 'react';
 
 import viteLogo from '/vite.svg';
 
-import reactLogo from './assets/react.svg';
+import { ButtonComponent } from '../components/button';
+import reactLogo from './../assets/react.svg';
+import { DivTest, Teste2 } from './styles';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,9 +24,10 @@ function App() {
       <h1>Vite + React</h1>
 
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>+</button>
-
-        <div className="count">{count}</div>
+        <ButtonComponent title="+" onClick={() => setCount((count) => count + 1)} />
+        <DivTest>
+          <Teste2>{count}</Teste2>
+        </DivTest>
 
         <button onClick={() => setCount((count) => count - 1)}>-</button>
       </div>
