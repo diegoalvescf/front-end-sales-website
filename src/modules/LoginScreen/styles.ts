@@ -1,5 +1,9 @@
+import { Typography } from 'antd';
 import styled from 'styled-components';
 
+const { Text } = Typography;
+
+import { ButtonComponent } from '../../shared/ButtonComponent';
 import { InputComponent } from '../../shared/InputComponent';
 
 export const Container = styled.div`
@@ -19,7 +23,8 @@ export const BackgroundImage = styled.img`
 `;
 
 export const LogoImage = styled.img`
-  margin-bottom: 20px;
+  width: 202px;
+  margin-bottom: 32px;
 `;
 
 export const ContainerLogin = styled.div`
@@ -43,6 +48,28 @@ export const LimitedContainer = styled.div`
   max-width: 498px;
 
   justify-content: center;
+  align-items: center;
 `;
 
-export const Input = styled(InputComponent)``;
+export const UserInput = styled(InputComponent)`
+  margin-bottom: 32px;
+`;
+
+export const PasswordInput = styled(InputComponent)`
+  margin-bottom: 64px;
+`;
+
+export const TitleLogin = styled(Text)`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+
+  color: #006397;
+  margin-bottom: 27px;
+`;
+
+export const SubmitButton = styled(ButtonComponent)`
+  margin-bottom: 16px;
+`;

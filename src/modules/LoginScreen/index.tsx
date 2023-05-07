@@ -2,9 +2,12 @@ import {
   BackgroundImage,
   Container,
   ContainerLogin,
-  Input,
   LimitedContainer,
   LogoImage,
+  PasswordInput,
+  SubmitButton,
+  TitleLogin,
+  UserInput,
 } from './styles';
 
 export const LoginScreen: React.FC = () => {
@@ -14,8 +17,14 @@ export const LoginScreen: React.FC = () => {
       <ContainerLogin>
         <LimitedContainer>
           <LogoImage src="./logo.png" />
-          <Input label="Usuário" />
-          <Input label="Senha" />
+
+          <TitleLogin>LOGIN</TitleLogin>
+
+          <UserInput label="Usuário" />
+
+          <PasswordInput label="Senha" />
+
+          <SubmitButton title="ENTRAR" type="primary" />
         </LimitedContainer>
       </ContainerLogin>
     </Container>
