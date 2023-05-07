@@ -1,9 +1,23 @@
-import { BackgroundImage } from './styles';
+import {
+  BackgroundImage,
+  Container,
+  ContainerLogin,
+  Input,
+  LimitedContainer,
+  LogoImage,
+} from './styles';
 
 export const LoginScreen: React.FC = () => {
   return (
-    <div>
+    <Container>
       <BackgroundImage src="./background.png" />
-    </div>
+      <ContainerLogin>
+        <LimitedContainer>
+          <LogoImage src="./logo.png" />
+          <Input label="Usuário" />
+          <Input label="Senha" />
+        </LimitedContainer>
+      </ContainerLogin>
+    </Container>
   );
 };
